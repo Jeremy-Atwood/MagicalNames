@@ -1,8 +1,8 @@
-
--Java Coding challenge for WGU
+# Magical Name Generator
+-Java Coding Challenge for WGU
 # Basis:
 
-  - Take an input from the user and have them choose their favorite color from a list colors provided
+  - Take an input from the user and have them choose their favorite color from a list of colors provided
   - Have a successfull HTTP Status of 200 with the inputed name and their Wizard/ Witch name
 
 
@@ -14,10 +14,10 @@ Currently working:
 
 Example screenshots of successfull POST and GET:
 
-# Successfull POST
+# Successful POST
 ![mikepost.png](https://www.dropbox.com/s/ufa0tfyxn8usx0w/mikepost.png?dl=0&raw=1) 
 
-# Successfull GET
+# Successful GET
 ![mikeget.png](https://www.dropbox.com/s/zjub4a9an2etf7f/mikeget.png?dl=0&raw=1)
 
 # Status
@@ -31,3 +31,4 @@ Example screenshots of successfull POST and GET:
  - Add function to simply enter the name and color and not have to use the CRUD methods
  - Successfully connect the seeded data in the data.sql file to auto-generate initial DB
  - Successfully connect the routes to the MySQL database that I have created in MySQL Workbench
+
