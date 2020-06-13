@@ -12,9 +12,11 @@ public class colorAndName {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String uName;
+    private String name;
 
-    private String[] color = {"Pink", "Red", "Orange", "Yellow", "Green", "Blue", "Brown", "White", "Gray"};
+    private String color;
+
+    private String magName;
 
     public Long getId() {
         return id;
@@ -25,18 +27,26 @@ public class colorAndName {
     }
 
     public String getName() {
-        return uName;
+        return name;
     }
 
     public void setName(String name) {
-        this.uName = name;
+        this.name = name;
     }
 
-    public String[] getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(String[] color) {
+    public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getMagName() {
+        return magName;
+    }
+
+    public void setMagName(String magName) {
+        this.magName = magName;
     }
 }
