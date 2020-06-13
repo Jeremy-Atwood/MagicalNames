@@ -12,7 +12,7 @@ public class colorAndName {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String uName;
 
     private String[] color = {"Pink", "Red", "Orange", "Yellow", "Green", "Blue", "Brown", "White", "Gray"};
 
@@ -25,11 +25,11 @@ public class colorAndName {
     }
 
     public String getName() {
-        return name;
+        return uName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.uName = name;
     }
 
     public String[] getColor() {

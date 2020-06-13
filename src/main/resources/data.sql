@@ -1,5 +1,5 @@
-INSERT INTO magName(name, color) VALUES('Jeremy', 'Red');
-INSERT INTO magName(name, color) VALUES('Maddie', 'Pink');
-INSERT INTO magName(name, color) VALUES('Lynette', 'Red');
+INSERT INTO mnames(name, color, magName) VALUES('Jeremy', 'Red', 'Redjy');
+INSERT INTO mnames(name, color, magName) VALUES('Maddie', 'Pink', 'Pingme');
+INSERT INTO mnames(name, color, magName) VALUES('Lynette', 'Red', 'Redle');
 
 COMMIT;
