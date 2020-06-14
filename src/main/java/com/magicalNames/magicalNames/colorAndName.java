@@ -1,5 +1,4 @@
 package com.magicalNames.magicalNames;
-//extends StringManipulation
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,8 +10,6 @@ public class colorAndName extends input {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-//    public String magName;
 
     public Long getId() {
         return id;
