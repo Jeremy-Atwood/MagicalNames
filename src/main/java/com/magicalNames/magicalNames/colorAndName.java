@@ -1,30 +1,18 @@
 package com.magicalNames.magicalNames;
-
+//extends StringManipulation
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class colorAndName {
+public class colorAndName extends input {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    public String name;
-
-    private String color;
-
-    public String magName = GetMagName();
-
-    String GetMagName() {
-        char FirstChar = this.name.toLowerCase().charAt(0);
-        char LastChar = this.name.toLowerCase().charAt(name.length() -1);
-
-        String theMagName = color + FirstChar + LastChar;
-        return theMagName;
-    }
+//    public String magName;
 
     public Long getId() {
         return id;
@@ -51,10 +39,11 @@ public class colorAndName {
     }
 
     public String getMagName() {
-        return magName;
+        char FirstChar = this.name.toLowerCase().charAt(0);
+        char LastChar = this.name.toLowerCase().charAt(name.length() -1);
+
+        String theMagName = color + FirstChar + LastChar;
+        return theMagName;
     }
 
-    public void setMagName(String magName) {
-        this.magName = GetMagName();
-    }
 }
