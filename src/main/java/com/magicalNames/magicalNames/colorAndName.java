@@ -12,11 +12,19 @@ public class colorAndName {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    public String name;
 
     private String color;
 
-    private String magName;
+    public String magName = GetMagName();
+
+    String GetMagName() {
+        char FirstChar = this.name.toLowerCase().charAt(0);
+        char LastChar = this.name.toLowerCase().charAt(name.length() -1);
+
+        String theMagName = color + FirstChar + LastChar;
+        return theMagName;
+    }
 
     public Long getId() {
         return id;
@@ -47,6 +55,6 @@ public class colorAndName {
     }
 
     public void setMagName(String magName) {
-        this.magName = magName;
+        this.magName = GetMagName();
     }
 }
