@@ -12,7 +12,7 @@ Currently working:
   - Creating the Magical Wizard or Witch name with the name and color that was input.
   
 ### Instructions
-  - After the code has loaded and ran load httplocalhost:8080.
+  - After the code has loaded and ran load http://localhost:8080.
   - To add an entery to the Response body or JSON click on the orange ! in the colorAndNames row.
   - Enter in your favorite color and your name and then click Make Request to add your information and view your Magical Name.
   
